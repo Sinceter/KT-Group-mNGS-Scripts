@@ -1,4 +1,5 @@
 # De novo assembly scripts
+The scripts are stored in CVVT server.
 
 ## Megahit for short reads assembly:
 
