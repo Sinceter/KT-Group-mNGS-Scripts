@@ -1,13 +1,13 @@
 # De novo assembly scripts
 The scripts are stored in CVVT server.
 
-## Megahit for short reads assembly:
+### Megahit for short reads assembly:
 
 ```bash
 /home/kelvinto/kelvinto/aixin/z.05.Jonathan.BAL.samples/step2.megahit.sh
 ```
 
-## Flye for long reads assembly:
+### Flye for long reads assembly:
 
 ```bash
 /home/kelvinto/kelvinto/aixin/z.05.Jonathan.BAL.samples/step2.flye.sh
