@@ -1,5 +1,20 @@
 # KT-Group-mNGS-Scripts
-This is for script sharing within the KT group
 
-# De novo assembly
-please find [De_novo_assembly/README.md](https://github.com/Sinceter/KT-Group-mNGS-Scripts/blob/main/De_novo_assembly/README.md "链接网站内denovo assembly脚本")
+A shared repository for internal use within the **KT Group**, hosting commonly used scripts for metagenomic analysis.
+
+---
+
+## 📚 Module Overview
+
+| Module                    | Description                                       | Link |
+|---------------------------|---------------------------------------------------|------|
+| **🧬 De novo Assembly**      | Scripts and instructions for genome assembly      |👉 [View](https://github.com/Sinceter/KT-Group-mNGS-Scripts/blob/main/De_novo_assembly/README.md) |
+| **📁 Kraken2 Report Summary**| Summarize Kraken2 output and generate reports     |👉 [View](https://github.com/Sinceter/Microbial-Clinical-Report?tab=readme-ov-file#kraken2-style-reports-summary) |
+
+---
+
+
+## Contact
+
+For questions, bug reports, or suggestions, please contact **liaixin@hku.hk** or open an issue on the [GitHub repository](https://github.com/Sinceter/Microbial-Clinical-Report).
+
