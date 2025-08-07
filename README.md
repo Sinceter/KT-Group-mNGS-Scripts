@@ -8,8 +8,9 @@ A shared repository for internal use within the **KT Group**, hosting commonly u
 
 | Module                    | Description                                       | Link |
 |---------------------------|---------------------------------------------------|------|
-| **🧬 De novo Assembly**      | Scripts and instructions for genome assembly      |👉 [View](https://github.com/Sinceter/KT-Group-mNGS-Scripts/blob/main/De_novo_assembly/README.md) |
+| **🧩 KB mNGS analysis** | Scripts for generating Kraken2 and Bracken (KB) reports based on raw Nanopore sequencing data (including *removal of human reads*) |👉 [View](https://github.com/rhodacyleung/mNGS) |
 | **📁 Kraken2 Report Summary**| Summarize Kraken2 output and generate reports     |👉 [View](https://github.com/Sinceter/Microbial-Clinical-Report?tab=readme-ov-file#kraken2-style-reports-summary) |
+| **🧬 De novo Assembly**      | Scripts and instructions for genome assembly      |👉 [View](https://github.com/Sinceter/KT-Group-mNGS-Scripts/blob/main/De_novo_assembly/README.md) |
 
 ---
 
