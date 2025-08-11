@@ -4,7 +4,7 @@ The scripts are stored in CVVT server.
 ### Megahit for short reads assembly:
 
 ```bash
-/home/kelvinto/kelvinto/aixin/z.05.Jonathan.BAL.samples/step2.megahit.sh
+/home/kelvinto/kelvinto/aixin/00.Data/06.assembly/run.megahit.for.short.reads.sh
 ```
 
 ### Flye for long reads assembly:
@@ -16,7 +16,7 @@ The scripts are stored in CVVT server.
 # 1. copy target script to your working directory
 - Megahit
 ```bash
-cp /home/kelvinto/kelvinto/aixin/z.05.Jonathan.BAL.samples/step2.megahit.sh <your working directory>
+cp /home/kelvinto/kelvinto/aixin/00.Data/06.assembly/run.megahit.for.short.reads.sh <your working directory>
 ```
 - Flye
 ```bash
