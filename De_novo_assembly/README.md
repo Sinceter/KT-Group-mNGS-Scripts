@@ -10,7 +10,7 @@ The scripts are stored in CVVT server.
 ### Flye for long reads assembly:
 
 ```bash
-/home/kelvinto/kelvinto/aixin/z.05.Jonathan.BAL.samples/step2.flye.sh
+/home/kelvinto/kelvinto/aixin/00.Data/06.assembly/run.flye.sh
 ```
 
 # 1. copy target script to your working directory
@@ -20,7 +20,7 @@ cp /home/kelvinto/kelvinto/aixin/z.05.Jonathan.BAL.samples/step2.megahit.sh <you
 ```
 - Flye
 ```bash
-cp /home/kelvinto/kelvinto/aixin/z.05.Jonathan.BAL.samples/step2.flye.sh <your working directory>
+cp /home/kelvinto/kelvinto/aixin/00.Data/06.assembly/run.flye.sh <your working directory>
 ```
 
 # 2. usage
