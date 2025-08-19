@@ -1,7 +1,7 @@
 # Metagenomic NGS Analysis
 
 Author: Rhoda Leung | *Bash script for processing Nanopore raw data to generate Kraken2 and Bracken reports for metagenomic analysis.*
-Second edit of this README file: Aixin LI
+Second edit of this README file: Aixin LI (2025-08-19)
 
 ---
 
