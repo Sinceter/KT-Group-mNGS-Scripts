@@ -18,5 +18,5 @@ A shared repository for internal use within the **KT Group**, hosting commonly u
 
 ## Contact
 
-For questions, bug reports, or suggestions, please contact **liaixin@hku.hk** or open an issue on the [GitHub repository](https://github.com/Sinceter/KT-Group-mNGS-Scripts).
+For questions, bug reports, or suggestions, please contact **liaixin06@connect.hku.hk** or open an issue on the [GitHub repository](https://github.com/Sinceter/KT-Group-mNGS-Scripts).
 
