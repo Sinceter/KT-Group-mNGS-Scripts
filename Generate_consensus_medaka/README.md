@@ -13,7 +13,7 @@ The pipeline accepts the following parameters:
 - **`-c`**: Coverage threshold for masking low-coverage regions (optional, default: `10`).
   - Please see example below.
     - When `-c` is set to 10, **all 3 consensus segments of Barcode74 will be masked**, so no consensus sequences will be generated for Barcode74 because each segment has at most 8 supporting reads.
-    - When `-c` is 5, **1 consensus sequence will be generated for Barcode74**.
+    - When `-c` is 5, **only 1 consensus segment (the region around 10kb-11kb in the figure below) will be generated for Barcode74**.
   - <img width="1279" height="503" alt="image" src="https://github.com/user-attachments/assets/ad8b5fb1-52c8-4236-8c4e-a0c8cae9f568" />
 
 - **`-t`**: Threads (optional, default: `8`).
