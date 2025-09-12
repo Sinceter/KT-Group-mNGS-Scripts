@@ -62,5 +62,6 @@ cp /home/kt_jdip/aixin/11.Chikungunya.PCR/consensus/run_medaka_consensus.sh <you
 ### CHIKV
 - The consensus sequences of Chikungunya virus (generated at minimum 10 reads coverage) is located in `/home/kt_jdip/aixin/11.Chikungunya.PCR/consensus/filter_min-10-reads_to_generate_consensus/summary`.
 - Overview
-<img width="1159" height="726" alt="image" src="https://github.com/user-attachments/assets/5ab98f8e-aedf-4a3c-a4ca-9b274615a930" />
+<img width="1163" height="723" alt="image" src="https://github.com/user-attachments/assets/2b1106ff-25a7-4ac7-bfc9-c57cd3cafb9a" />
+
 
