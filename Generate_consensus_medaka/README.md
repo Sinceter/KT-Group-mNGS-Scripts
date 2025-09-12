@@ -1,6 +1,6 @@
 # Consensus Generation Pipeline
 
-## Overview
+## Description
 This pipeline processes Nanopore sequencing data to generate consensus sequences for any species as long as you provide the reference genome. It uses Medaka for consensus calling, masks low-coverage regions, and outputs the final consensus sequences.
 
 ---
@@ -30,7 +30,7 @@ bash run_medaka_consensus.sh -i sample.fastq.gz -r ChikV_ref_sequence_PV593524.f
 
 ---
 
-### Output
+## Output
 ```
 medaka_Filter_len800-1800bp_trimmed_barcode74_20250912-1150/ # output folder with time stamp
 ├── calls_to_draft.bam # bam file showing read alignments to the reference
@@ -58,6 +58,7 @@ cp /home/kt_jdip/aixin/11.Chikungunya.PCR/consensus/run_medaka_consensus.sh <you
 ---
 
 ## Example
+
 ### CHIKV
 - The consensus sequences of Chikungunya virus (generated at minimum 10 reads coverage) is located in `/home/kt_jdip/aixin/11.Chikungunya.PCR/consensus/filter_min-10-reads_to_generate_consensus/summary`.
 - Overview
