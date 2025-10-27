@@ -5,11 +5,13 @@
 - [Parameters](#parameters)
 - [Output](#output)
 - [Example](#example)
+  - [CHIKV (Nanopore20250826)](chikv-nanopore20250826)
+  - [Zika virus (Nanopore20251009_2)](zika-virus-nanopore20251009-2)
 
 ## Description
 Based on Nanopore sequencing data, this pipeline uses Medaka for consensus calling, masks low-coverage regions, and outputs the final consensus sequences. 
 
-> [!NOTE]
+> [!WARNING]
 > You can run the pipeline only if you can access to the right computer in the sequencing room (IP: 10.64.148.20) (KT group). 
 
 ---
@@ -66,11 +68,11 @@ medaka_Filter_len800-1800bp_trimmed_barcode74_20250912-1150/ ---> # output folde
 
 ## Example
 
-### CHIKV 
+### CHIKV (Nanopore20250826)
 - The reference genome of CHIKV is located in `/home/kt_jdip/aixin/11.Chikungunya.PCR/consensus/ChikV_ref_sequence_PV593524.fasta`
 - The consensus sequences of Chikungunya virus (generated at minimum 10 reads coverage) is located in `/home/kt_jdip/aixin/11.Chikungunya.PCR/consensus/filter_min-10-reads_to_generate_consensus/summary`.
 
-### Zika virus 
+### Zika virus (Nanopore20251009_2)
 - The reference genome of Zika virus is located in `/home/kt_jdip/aixin/12.Zika/Zika_MR766_ref.fas`
 - The consensus sequences of Zika virus is `/home/kt_jdip/aixin/12.Zika/medaka_20251009_2_48hps_barcode01_20251015-1512/consensus.masked.fasta`
 
