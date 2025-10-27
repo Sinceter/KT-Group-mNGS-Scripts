@@ -5,8 +5,8 @@
 - [Parameters](#parameters)
 - [Output](#output)
 - [Example](#example)
-  - [CHIKV (Nanopore20250826)](chikv-nanopore20250826)
-  - [Zika virus (Nanopore20251009_2)](zika-virus-nanopore20251009-2)
+  - [CHIKV (Nanopore20250826)](#chikv-nanopore20250826)
+  - [Zika virus (Nanopore20251009_2)](#zika-virus-nanopore20251009-2)
 
 ## Description
 Based on Nanopore sequencing data, this pipeline uses Medaka for consensus calling, masks low-coverage regions, and outputs the final consensus sequences. 
