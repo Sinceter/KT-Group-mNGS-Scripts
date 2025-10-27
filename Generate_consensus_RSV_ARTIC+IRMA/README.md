@@ -24,16 +24,22 @@ Based on **Nanopore (ONT)** sequencing reads, this pipeline:
 Run the pipeline for a single sample:
 
 ```bash
+# The simplest try is running:
 cd <your working directory>
 SCRIPT="/home/kelvinto/kelvinto/aixin/07.temp-tasks/07.20250919_RSV-surveillance-consensus-pipe/RSV_consensus.pipeline.sh"
+bash $SCRIPT --fastq <reads.fastq.gz>
+```
 
-# With typical options
-bash "$SCRIPT" \
+```bash
+# or you can try with other options
+cd <your working directory>
+SCRIPT="/home/kelvinto/kelvinto/aixin/07.temp-tasks/07.20250919_RSV-surveillance-consensus-pipe/RSV_consensus.pipeline.sh"
+bash $SCRIPT \
   --fastq <reads.fastq.gz> \
   --minlen <optional> --maxlen <optional> \
-  --min_depth <default: 40> \
-  --threads <default: 24> \
-  --outdir <default: RSV_pipeline_date>
+  --min_depth <optional, default: 40> \
+  --threads <optional, default: 24> \
+  --outdir <optional, default: RSV_pipeline_date>
 ```
 
 ---
