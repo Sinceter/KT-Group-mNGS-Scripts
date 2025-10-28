@@ -1,4 +1,5 @@
 # Consensus Generation Pipeline
+## Update: 2025-10-28
 ## Content
 - [Description](#description)
 - [Usage](#usage)
@@ -10,11 +11,11 @@
   - [Zika virus (Nanopore20251009_2)](#zika-virus-nanopore20251009_2)
 
 ## Description
-Based on Nanopore sequencing data, this pipeline uses Medaka for:
-1. Optionally filter reads length;
-2. Optionally trim 30 bp from both ends of the reads;
-3. Do consensus calling;
-4. Mask low-coverage regions and outputs the final consensus sequences. 
+Based on Nanopore sequencing data, this pipeline will do:
+1. **Trimming** — remove primer or adapter regions from both ends of reads (optional).  
+2. **Length filtering** — retain reads within the defined size window (optional).  
+3. **Medaka consensus calling** — generate polished consensus sequence.  
+4. **Coverage masking** — mask bases below coverage threshold with `N` and outputs the final consensus sequences. 
 
 > [!WARNING]
 > You can run the pipeline only if you can access to the right computer in the sequencing room (IP: 10.64.148.20) (KT group). 
@@ -33,17 +34,56 @@ bash $SCRIPT -i <fastq.gz file of your sample> -r <reference genome> -c <coverag
 ## Parameters
 The pipeline accepts the following parameters:
 
-- **`-i`**: Input FASTQ file (compressed, **required**).
-- **`-r`**: Reference genome in FASTA format (**required**).
-- **`-c`**: Coverage threshold for masking low-coverage regions (optional, default: `10`).
-  - Please see example below.
-    - When `-c` is set to 10, *all 3 consensus segments of Barcode74 will be masked*, so no consensus sequences will be generated for Barcode74 because each segment has at most 8 supporting reads.
-    - When `-c` is 5, *only 1 consensus segment (the region around 10kb-11kb in the figure below) will be generated for Barcode74*.
-  - <img width="1279" height="503" alt="image" src="https://github.com/user-attachments/assets/ad8b5fb1-52c8-4236-8c4e-a0c8cae9f568" />
+### Required input files
 
-- **`-t`**: Threads (optional, default: `8`).
-- **`-m`**: Medaka model to use (optional, default: `r1041_e82_400bps_sup_v5.0.0`).
-  - You can check [Medaka GitHub #Model](https://github.com/nanoporetech/medaka?tab=readme-ov-file#models) for models that can be used.
+| **Parameter** | **Type / Default** | **Description** | **Example** |
+|----------------|--------------------|-----------------|--------------|
+| `-i <file>` | *Required* | Input FASTQ file (`.fastq` or `.fastq.gz`). | `-i sample.fastq.gz` |
+| `-r <file>` | *Required* | Reference genome in FASTA format, used for alignment and consensus polishing. | `-r ChikV_ref.fasta` |
+| *(Output directory)* | auto | Results are saved in a folder named `medaka_pipeline_<sample>`. | `medaka_pipeline_nanopore2xxxbarcode01` |
+
+---
+
+### Preprocessing: trimming
+
+| **Parameter** | **Default** | **Description** | **Example** |
+|----------------|-------------|-----------------|--------------|
+| *(enabled by default)* | — | Remove fixed number of bases from both read ends using **seqtk**. | — |
+| `--no-trim` |   | Disable trimming step entirely. | `--no-trim` |
+| `-b <int>` | `30` | Number of bases trimmed from the **beginning** of each read. | `-b 20` |
+| `-e <int>` | `30` | Number of bases trimmed from the **end** of each read. | `-e 20` |
+
+---
+
+### Preprocessing: length filtering
+
+| **Parameter** | **Default** | **Description** | **Example** |
+|----------------|-------------|-----------------|--------------|
+| *(enabled by default)* | — | Filter reads by length using **BBTools reformat.sh**. | — |
+| `--no-filter-length` |  | Disable length filtering step. | `--no-filter-length` |
+| `-L <int>` | `800` | Minimum read length to retain. | `-L 700` |
+| `-U <int>` | `1800` | Maximum read length to retain. | `-U 2000` |
+
+---
+
+### Medaka options
+
+| **Parameter** | **Default** | **Description** | **Example** |
+|----------------|-------------|-----------------|--------------|
+| `-t <int>` | `12` | Number of CPU threads for **Medaka** and **pigz** compression. | `-t 16` |
+| `-m <str>` | `r1041_e82_400bps_sup_v5.0.0` | Medaka model name (depends on basecaller version and read type). | `-m r1041_e82_400bps_fast_v5.0.0` |
+| `-c <int>` | `10` | Coverage threshold for low-coverage masking, please note that bases with coverage less than the number you specified with `-c` will be replaced by `N`. | `-c 20` |
+> [!NOTE]
+> For -m, you can check [Medaka GitHub #Model](https://github.com/nanoporetech/medaka?tab=readme-ov-file#models) for models that can be used.
+> 
+> For -c, please see example below.
+>
+>   - When `-c` is set to 10, *all 3 consensus segments of Barcode74 will be masked*, so no consensus sequences will be generated for Barcode74 because each segment has at most 8 supporting reads.
+>
+>   - When `-c` is 5, *only 1 consensus segment (the region around 10kb-11kb in the figure below) will be generated for Barcode74*.
+>
+> <img width="1279" height="503" alt="image" src="https://github.com/user-attachments/assets/ad8b5fb1-52c8-4236-8c4e-a0c8cae9f568" />
+
 
 ---
 
