@@ -112,7 +112,7 @@ medaka_pipeline_barcode84/ ---> # output folder with sample identifier
 ├── consensus.stitch.fasta -------------------------------------> # segmented consensus sequences stitched into one sequence according to the reference genome coordinates, gaps filled with 'N'
 ├── Filter_len800-1800bp_barcode84.fastq.gz --------------------> # if produced, this is the reads file after length filtering
 ├── lowcov.bed -------------------------------------------------> # low-coverage regions (masked as 'N' in the final consensus)
-└── Trimmed_barcode89.fastq.gz ---------------------------------> # if produced, this is the reads file after reads primer trimming
+└── Trimmed_barcode84.fastq.gz ---------------------------------> # if produced, this is the reads file after reads primer trimming
 
 0 directories, 9 files
 ```
@@ -131,7 +131,7 @@ medaka_pipeline_barcode84/ ---> # output folder with sample identifier
 - The reference genome of CHIKV is located in `/home/kt_jdip/aixin/11.Chikungunya.PCR/consensus/ChikV_ref_sequence_PV593524.fasta`
 - The consensus sequences of Chikungunya virus (generated at minimum 10 reads coverage) is located in `/home/kt_jdip/aixin/11.Chikungunya.PCR/consensus/filter_min-10-reads_to_generate_consensus/summary`.
 ### CHIKV (Nanopore20251024)
-- Result: `/home/kt_jdip/aixin/11.CHIKV.Nanopore20251024`
+- Result: `/home/kt_jdip/aixin/11.CHIKV.Nanopore20251024/summary`
 
 ### Zika virus (Nanopore20251009_2)
 - The reference genome of Zika virus is located in `/home/kt_jdip/aixin/12.Zika/Zika_MR766_ref.fas`
