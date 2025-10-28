@@ -8,7 +8,7 @@ A shared repository for internal use within the **KT Group**, hosting commonly u
 
 | Module                    | Description                                       | Link |
 |---------------------------|---------------------------------------------------|------|
-| **🧩 KB mNGS analysis** | Generate Kraken2 and Bracken (KB) reports based on raw Nanopore sequencing data (including *removal of human reads*) |👉 [View](https://github.com/rhodacyleung/mNGS) |
+| **🧩 KB mNGS analysis** | Generate Kraken2 and Bracken (KB) reports based on raw Nanopore sequencing data (including *removal of human reads*) |👉 [View](https://github.com/Sinceter/mNGS) |
 | **📁 Kraken2 Report Summary**| Summarize Kraken2-style reports and generate easy-to-read table     |👉 [View](https://github.com/Sinceter/Microbial-Clinical-Report?tab=readme-ov-file#kraken2-style-reports-summary) |
 | **🧬 De novo Assembly**      | Genome assembly for long/short reads     |👉 [View](https://github.com/Sinceter/KT-Group-mNGS-Scripts/blob/main/De_novo_assembly/README.md) |
 | **Generate_consensus_for_CHIKV/Zika/etc.** | Generate consensus sequence using Medaka (for Nanopore reads) |👉🏼[View](https://github.com/Sinceter/KT-Group-mNGS-Scripts/blob/main/Generate_consensus_medaka/README.md) |
