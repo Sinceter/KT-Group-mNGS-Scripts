@@ -26,8 +26,18 @@ Based on Nanopore sequencing data, this pipeline will do:
 Run the pipeline for a single sample:
 ```bash
 cd <your working directory>
-SCRIPT="/home/kt_jdip/aixin/11.Chikungunya.PCR/consensus/run_medaka_consensus.sh"
-bash $SCRIPT -i <fastq.gz file of your sample> -r <reference genome> -c <coverage depth> -t <threads number> -m <Medaka model>
+SCRIPT="/home/kt_jdip/aixin/11.Chikungunya.PCR/consensus/medaka_consensus_pipeline.sh"
+
+# Examples:
+## default trim 30 bp + filter length 800-1800
+  bash $SCRIPT -i sample.fastq.gz -r ref.fasta
+
+## trim 20 bp + filter length 700-2000
+  bash $SCRIPT -i sample.fastq.gz -r ref.fasta -b 20 -e 20 -L 700 -U 2000
+
+## skip primer trimming and reads length filtering
+  bash $SCRIPT -i sample.fastq.gz -r ref.fasta --no-trim --no-filter-length -t 16 
+
 ```
 
 ---
@@ -48,10 +58,11 @@ The pipeline accepts the following parameters:
 
 | **Parameter** | **Default** | **Description** | **Example** |
 |----------------|-------------|-----------------|--------------|
-| *(enabled by default)* | — | Remove fixed number of bases from both read ends using **seqtk**. | — |
-| `--no-trim` |   | Disable trimming step entirely. | `--no-trim` |
 | `-b <int>` | `30` | Number of bases trimmed from the **beginning** of each read. | `-b 20` |
 | `-e <int>` | `30` | Number of bases trimmed from the **end** of each read. | `-e 20` |
+| *(if you do not want to trim reads, use parameter below:)* | - | - | — |
+| `--no-trim` |   | Disable trimming step entirely. | `--no-trim` |
+
 
 ---
 
@@ -59,10 +70,10 @@ The pipeline accepts the following parameters:
 
 | **Parameter** | **Default** | **Description** | **Example** |
 |----------------|-------------|-----------------|--------------|
-| *(enabled by default)* | — | Filter reads by length using **BBTools reformat.sh**. | — |
-| `--no-filter-length` |  | Disable length filtering step. | `--no-filter-length` |
 | `-L <int>` | `800` | Minimum read length to retain. | `-L 700` |
 | `-U <int>` | `1800` | Maximum read length to retain. | `-U 2000` |
+| *(if you do not want to filter length, use parameter below:)* | — | - | — |
+| `--no-filter-length` |  | Disable length filtering step. | `--no-filter-length` |
 
 ---
 
