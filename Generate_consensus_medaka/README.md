@@ -10,7 +10,11 @@
   - [Zika virus (Nanopore20251009_2)](#zika-virus-nanopore20251009_2)
 
 ## Description
-Based on Nanopore sequencing data, this pipeline uses Medaka for consensus calling, masks low-coverage regions, and outputs the final consensus sequences. 
+Based on Nanopore sequencing data, this pipeline uses Medaka for:
+1. Optionally filter reads length;
+2. Optionally trim 30 bp from both ends of the reads;
+3. Do consensus calling;
+4. Mask low-coverage regions and outputs the final consensus sequences. 
 
 > [!WARNING]
 > You can run the pipeline only if you can access to the right computer in the sequencing room (IP: 10.64.148.20) (KT group). 
