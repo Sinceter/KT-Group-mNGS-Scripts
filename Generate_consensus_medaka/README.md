@@ -8,6 +8,7 @@
 - [Example](#example)
   - [CHIKV (Nanopore20250826)](#chikv-nanopore20250826)
   - [CHIKV (Nanopore20251024)](#chikv-nanopore20251024)
+  - [CHIKV (Nanopore20251028)](#chikv-nanopore20251028)
   - [Zika virus (Nanopore20251009_2)](#zika-virus-nanopore20251009_2)
 
 ## Description
@@ -132,6 +133,9 @@ medaka_pipeline_barcode84/ ---> # output folder with sample identifier
 - The consensus sequences of Chikungunya virus (generated at minimum 10 reads coverage) is located in `/home/kt_jdip/aixin/11.Chikungunya.PCR/consensus/filter_min-10-reads_to_generate_consensus/summary`.
 ### CHIKV (Nanopore20251024)
 - Result: `/home/kt_jdip/aixin/11.CHIKV.Nanopore20251024/summary`
+
+### CHIKV (Nanopore20251028)
+- Result: `/home/kt_jdip/aixin/11.CHIKV.Nanopore20251028/summary`
 
 ### Zika virus (Nanopore20251009_2)
 - The reference genome of Zika virus is located in `/home/kt_jdip/aixin/12.Zika/Zika_MR766_ref.fas`
