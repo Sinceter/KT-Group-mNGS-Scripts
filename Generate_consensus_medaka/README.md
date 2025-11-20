@@ -37,7 +37,7 @@ SCRIPT="/home/kt_jdip/aixin/11.Chikungunya.PCR/consensus/medaka_consensus_pipeli
   bash $SCRIPT -i sample.fastq.gz -r ref.fasta -b 20 -e 20 -L 700 -U 2000
 
 ## skip primer trimming and reads length filtering
-  bash $SCRIPT -i sample.fastq.gz -r ref.fasta --no-trim --no-filter-length -t 16 
+  bash $SCRIPT -i sample.fastq.gz -r ref.fasta -F 0 -T 0 -t 16 
 
 ```
 
