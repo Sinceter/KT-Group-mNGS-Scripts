@@ -9,6 +9,7 @@ This pipeline is build according to the method described in the paper [doi:10.11
 - [Output](#output)
 - [Example](#example)
   -  [RSV (Nanopore20251015)](#rsv-nanopore20251015)
+  -  [RSV (Nanopore20251118)](#rsv-nanopore20251118)
 
 ## Description
 Based on **Nanopore (ONT)** sequencing reads, this pipeline:
@@ -86,4 +87,8 @@ A new timestamped directory is created (or the one you provide via --outdir) and
 ## Example
 
 ### RSV (Nanopore20251015)
-- Result: `/home/kelvinto/kelvinto/aixin/07.temp-tasks/07.20250919_RSV-surveillance-consensus-pipe/Nanopore20251015_consensus/summary`
+- Consensus generated using IRMA default RSV references: `/home/kelvinto/kelvinto/aixin/07.temp-tasks/07.20250919_RSV-surveillance-consensus-pipe/Nanopore20251015_consensus_IRMA_consensus/summary`
+- Consensus generated using Nextclade RSV references: `/home/kelvinto/kelvinto/aixin/07.temp-tasks/07.20250919_RSV-surveillance-consensus-pipe/Nanopore20251015_consensus_Nextclade_consensus/summary`
+
+### RSV (Nanopore20251118)
+- Consensus generated using Nextclade RSV references: `/home/kelvinto/kelvinto/aixin/07.temp-tasks/07.20250919_RSV-surveillance-consensus-pipe/Nanopore20251118_consensus_Nextclade_consensus/summary`
