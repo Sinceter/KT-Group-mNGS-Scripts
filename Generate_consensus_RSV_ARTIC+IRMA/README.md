@@ -88,7 +88,7 @@ A new timestamped directory is created (or the one you provide via --outdir) and
 
 ### RSV (Nanopore20251015)
 - Consensus generated using IRMA default RSV references: `/home/kelvinto/kelvinto/aixin/07.temp-tasks/07.20250919_RSV-surveillance-consensus-pipe/Nanopore20251015_consensus_IRMA_consensus/summary`
-- Consensus generated using Nextclade RSV references: `/home/kelvinto/kelvinto/aixin/07.temp-tasks/07.20250919_RSV-surveillance-consensus-pipe/Nanopore20251015_consensus_Nextclade_consensus/summary`
+- (NEW) Consensus generated using Nextclade RSV references: `/home/kelvinto/kelvinto/aixin/07.temp-tasks/07.20250919_RSV-surveillance-consensus-pipe/Nanopore20251015_consensus_Nextclade_consensus/summary`
 
 ### RSV (Nanopore20251118)
 - Consensus generated using Nextclade RSV references: `/home/kelvinto/kelvinto/aixin/07.temp-tasks/07.20250919_RSV-surveillance-consensus-pipe/Nanopore20251118_consensus_Nextclade_consensus/summary`
