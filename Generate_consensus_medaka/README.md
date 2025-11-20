@@ -62,7 +62,7 @@ The pipeline accepts the following parameters:
 | `-b <int>` | `30` | Number of bases trimmed from the **beginning** of each read. | `-b 20` |
 | `-e <int>` | `30` | Number of bases trimmed from the **end** of each read. | `-e 20` |
 | *(if you do not want to trim reads, use parameter below:)* | - | - | — |
-| `--no-trim` |   | Disable trimming step entirely. | `--no-trim` |
+| `-T` |   | Disable trimming step entirely. | `-T 0` |
 
 
 ---
@@ -74,7 +74,7 @@ The pipeline accepts the following parameters:
 | `-L <int>` | `800` | Minimum read length to retain. | `-L 700` |
 | `-U <int>` | `1800` | Maximum read length to retain. | `-U 2000` |
 | *(if you do not want to filter length, use parameter below:)* | — | - | — |
-| `--no-filter-length` |  | Disable length filtering step. | `--no-filter-length` |
+| `-F` |  | Disable length filtering step. | `-F 0` |
 
 ---
 
