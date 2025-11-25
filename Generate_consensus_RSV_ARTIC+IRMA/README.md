@@ -1,8 +1,7 @@
 # RSV Consensus Generation Pipeline (ARTIC + Medaka) V2 
 This pipeline is modified according to the method described in the paper [doi:10.1111/irv.70106](https://github.com/Sinceter/KT-Group-mNGS-Scripts/blob/main/Generate_consensus_RSV_ARTIC%2BIRMA/Influenza%20Resp%20Viruses%20-%202025%20-%20Dong%20-%20An%20Improved%20Rapid%20and%20Sensitive%20Long%20Amplicon%20Method%20for%20Nanopore%E2%80%90Based%20RSV.pdf). 
 ## Update: 2025-11-24
-## Change: Use Medaka+Nextclade [RSV_A_PP109421](https://www.ncbi.nlm.nih.gov/nuccore/PP109421.1) / 
-[RSV_B_OP975389](https://www.ncbi.nlm.nih.gov/nuccore/OP975389.1) reference (downloaded on 2025-11-20) to generate concensus, instead of using IRMA pipeline+IRMA reference.
+## Change: Use Medaka+Nextclade [RSV_A_PP109421](https://www.ncbi.nlm.nih.gov/nuccore/PP109421.1) / [RSV_B_OP975389](https://www.ncbi.nlm.nih.gov/nuccore/OP975389.1) reference (downloaded on 2025-11-20) to generate concensus, instead of using IRMA pipeline+IRMA reference.
 
 <img width="1920" height="967" alt="image" src="https://github.com/user-attachments/assets/53174697-71a6-48a0-a824-fd277e4b7608" />
 <img width="1920" height="967" alt="image" src="https://github.com/user-attachments/assets/0a5ce45f-99be-4bb3-b1ef-0bf21266982a" />
