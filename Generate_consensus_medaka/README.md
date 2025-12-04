@@ -1,5 +1,5 @@
 # Consensus Generation Pipeline
-## Update: 2025-10-28
+## Update: 2025-12-04
 ## Content
 - [Description](#description)
 - [Usage](#usage)
@@ -10,6 +10,7 @@
   - [CHIKV (Nanopore20251024)](#chikv-nanopore20251024)
   - [CHIKV (Nanopore20251028)](#chikv-nanopore20251028)
   - [Zika virus (Nanopore20251009_2)](#zika-virus-nanopore20251009_2)
+  - [MERS-CoV (Nanopore20251203_2)](#mers-cov-nanopore20251203_2)
 
 ## Description
 Based on Nanopore sequencing data, this pipeline will do:
@@ -141,3 +142,7 @@ medaka_pipeline_barcode84/ ---> # output folder with sample identifier
 - The reference genome of Zika virus is located in `/home/kt_jdip/aixin/12.Zika/Zika_MR766_ref.fas`
 - The consensus sequences of Zika virus is `/home/kt_jdip/aixin/12.Zika/medaka_20251009_2_48hps_barcode01_20251015-1512/consensus.masked.fasta`
 
+### MERS-CoV (Nanopore20251203_2)
+- Reference genome: `/media/kt_jdip/Data_Drive/Nanopore20251203_2/JX869059.fasta`
+- Script: `/media/kt_jdip/Data_Drive/Nanopore20251203_2/consensus.sh` (Trim primer 30bp from both end; filter length > 400; reads depth >20 )
+- Results: `/media/kt_jdip/Data_Drive/Nanopore20251203_2`
