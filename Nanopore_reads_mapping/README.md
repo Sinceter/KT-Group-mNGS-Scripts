@@ -8,7 +8,7 @@ The script is on computer IP: 10.64.148.20 (Sequencing room right computer)
 - [Parameters](#parameters)
 - [Output](#output)
 - [Example](#example)
-  - [MERS-CoV (Nanopore20251203_2)](#mers-cov-nanopore20251203-2)
+  - [MERS-CoV (Nanopore20251203_2)](#mers-cov-nanopore20251203_2)
 
 ---
 
