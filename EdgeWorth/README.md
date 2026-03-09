@@ -43,3 +43,27 @@ python3 agnes_html_parser.py /path/to/html_dir -o summary.csv
 ```
 python3 agnes_html_parser.py /path/to/html_dir -o summary.csv --xlsx summary.xlsx
 ```
+
+## Output
+```
+	•	source_file
+	•	lab_sample_id
+	•	date_time
+	•	time_interval
+	•	sample_type
+	•	sample_class
+	•	barcode
+	•	workflow_version
+	•	database_version
+	•	total_microbial_reads
+	•	total_reads
+	•	total_human_reads_count_percent_of_total_reads
+	•	total_bases
+	•	mean_read_length
+	•	mean_read_quality
+	•	unclassified
+	•	below_threshold
+	•	organisms_combined
+	•	organisms_above_threshold
+	•	viral_report
+```
